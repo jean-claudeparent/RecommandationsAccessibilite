@@ -18,29 +18,56 @@ sigmificativement  du wag 2.1.
 Par contre si vous les suivez vous serez conforme wag 2.1.
 </p>
 <p>
-1.1.1 Contenu non textuel : tout contenu non-textuel présenté à l'utilisateur
- a un équivalent textuel qui remplit une fonction équivalente.
+<h2>1.1.1 Contenu non textuel : tout contenu non-textuel présenté à l'utilisateur
+ a un équivalent textuel qui remplit une fonction équivalente.</h2>
 </p>
-<h2>Comment tester</h2>
+<h3>Comment tester</h3>
 
 <p>
 La fonction "Audit / Accessibility" des version récente de chrome détecte ce problème
 </p>
+<h2>1.1.1.i1 Éléminer les situations de recours à un seul sens</h2>
 <p>
-Recommandation de jcassertion.org pour l'intranet
+Éliminer les situation où on recours à des éléments s'adressant à un seul sens. Par exemple:
 </p>
 <ul>
   <li>
-    Les éléments multi média comme les vidéos et les fichier
-de son on une description significative en texte et il est clair que la description s'applique à 
-l'élément multi médea..
+Passer un test oz donner l'équivalent texte donnerait la réponse, par exemple reconnaître un logo.
   </li>
-
+  <li>
+Des éléments de site orientées pour faire ressentir une expériencesensorielle par un sens précis. Par exemple une grosse animation d'un paysage.
+  </li>
+  <li>
+UnCAPTCHA (test de turing) reposant sur un seul sens.Par exemple demande de  sélectionner toutes les images
+ représentant un chien  parmi 10 images. Un intranet devrait utiliser un autre moyen pour
+s'assurer de l'identité de ses utilisateur.
+  </li>
 </ul>
+<h3>Comment tester</h3>
+<p>
+La décision d'éliminer ces situations devrait se prendre à
+la conception  du site.
+</p>
 
 
+<h2>1.1.1.i2 Rendre invisibles les éléments purement décoratifs</h2>
+<p>
+Les éléments purement décoratifs
+devraiemt être rendus invisibles aux
+technologies d'assistances.
+Par exemple une image qui est juste un dégradé de courleur
+pour faire joli 
+devrait avoir une chaîne de caractère vide
+comme texte alternatif.
 
-
+</p>
+<h3>Comment tester</h3>
+<p>
+Essais manuel du site avec NVDA. Les validateurs
+automatiques ne sont pas
+en mesure de déterminer quelles sont
+les images purement décorative.
+</p>
 
 <p class="copyright">Copyright 2019-2020 Jean-Claude Parent
 </p>
