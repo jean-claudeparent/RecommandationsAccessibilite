@@ -14,14 +14,16 @@
 <h2>Stratégie d'essais</h2>
 
 <p>
-Comme tout développement informatique
-l'accessibilité doit être testée.
+Comme l'accessibilité reoise
+sur l'interaction de plusieurs éléments
+il faut absolument tester.
+
 Les essais se font en deux partie:
 </p>
 <ul>
   <li>
 Les essais d'analyse du code des pages.
-Ceci est mieux accompli par un logiciel d'analyse okys statique des pages.
+Ceci est mieux accompli par un logiciel d'analyse statique des pages.
   </li>
   <li>
 Les essais du résultat global de l'accessibilité. Ceci est fait par
@@ -34,9 +36,96 @@ d'assistance.
 <p>
 Il est à noter que c'est un processus
 itératif. Un changement
-fait suite aux essais globaux  debrait 
+fait suite aux essais globaux  devrait 
 être retester avec l'outil automatisé.
 </p>
+
+<h2>Analyse statique du code</h2>
+<p>
+On parles d'analyse statique du code oarce que
+le logiciel regarde une page à un moment données.
+Le logiciel ne peut pas trouver les problèmes
+qui apparaissebt uniquement
+quand l'utilisateur travaille avec la oage.
+Par contre certainsproblènes
+dMaccessivbiliré
+à l'utilisation peuvent être détectés en
+regardant uniquement le code html.
+
+</p>
+<h3>Lighthouse</h3>
+<p>
+Lighthouse est un logiciel qui
+peut faire des audit de pahe web.
+Il y a nottamment un audit d'accessibilité
+qui est assez bon.
+LightHouse peut petre accédé
+par les outils pour les développeur de chrome
+Il peut aussi être utilisé d'autres façon comme
+un validateur en ligne de commande.
+Il peut aussi être ajouté
+dans un scénario d'intégration continue.
+</p>
+<p>
+Avantages
+</p>
+<ul>
+  <li>
+Déjà pré installé dans les versions de google chrome.
+  </li>
+  <li>
+Déjà pré installé dans les versions de google chrome.
+  </li>
+  <li>
+Facile à installer pour une utilisation en ligne de commande.
+  </li>
+  <li>
+Supporte une variété de cas d'utilisation.
+  </li>
+  <li>
+Donne d'excellent explication et suhhestions
+pour corriger ce qui ne va pas.
+  </li>
+  <li>
+Sécuritaire, tout se passe sur votre matériel.
+  </li>
+  <li>
+Avec chrome on peut auditer des pages
+qui requiert une authentification.
+  </li>
+  <li>
+Donne des suggestions de test à faire manuellement.
+  </li>
+
+</ul>
+
+<p>
+Désavantages
+</p>
+<ul>
+  <li>
+Disponible uniquement en anglais.
+  </li>
+  <li>
+N'indique pas les numéros de  critères de succès
+du WAG 2.1 qui ne passent pas.
+  </li>
+
+
+</ul>
+
+<p>
+Liens utiles
+</p>
+<ul>
+  <li>
+Site web de lighthouse (en anglais)
+  </li>
+  <li>
+Exemple de rapport d'audit  d'accessibilité de lighthouse (en anglais)
+  </li>
+</ul>
+
 <h2>Page de test</h2>
 <p>
 Voici une page avec des erreurs détectables par un
