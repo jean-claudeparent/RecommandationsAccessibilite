@@ -14,9 +14,11 @@
 <h2>Stratégie d'essais</h2>
 
 <p>
-Comme l'accessibilité reoise
+Comme l'accessibilité repose
 sur l'interaction de plusieurs éléments
-il faut absolument tester.
+il faut absolument tester. Le respect
+théorique des règles
+n'est pas suffisant.
 
 Les essais se font en deux partie:
 </p>
@@ -61,9 +63,11 @@ Lighthouse est un logiciel qui
 peut faire des audit de page web.
 Il y a nottamment un audit d'accessibilité
 qui est assez bon.
-LightHouse peut petre accédé
-par les outils pour les développeur de chrome
-Il peut aussi être utilisé d'autres façon comme
+LightHouse peut être accédé
+par les outils pour les développeur de chrome. Les outils 
+développeurs sont dans le menu de google chrome
+car ils sont pré installées sur chrome pour ordinateur de bureau.
+Lighthouse  peut aussi être utilisé d'autres façon comme
 un validateur en ligne de commande.
 Il peut aussi être ajouté
 dans un scénario d'intégration continue.
@@ -73,7 +77,7 @@ Avantages
 </p>
 <ul>
   <li>
-Déjà pré installé dans les versions de google chrome.
+Gratuit et déjà pré installé dans les versions de google chrome.
   </li>
   <li>
 Facile à installer pour une utilisation en ligne de commande.
@@ -108,7 +112,9 @@ Disponible uniquement en anglais.
   </li>
   <li>
 N'indique pas les numéros de  critères de succès
-du WAG 2.1 qui ne passent pas.
+du WAG 2.1 qui ne passent pas. Il peut
+aussi sortir des erreurs d'accesibilité dépassant
+le niveau A de conformité.
   </li>
 
 
@@ -133,25 +139,25 @@ Exemple de rapport d'audit  d'accessibilité de lighthouse (en anglais)
 Conseil: si votre site n'est pas
 compatible avec le mobile, mettez lighthouse en mode ordinateur de bureau pour l'audit.
 </p>
-<h2>Essais glonaux d'accessibilité d'accesibilité</h2>
+<h2>Essais globaux d'accessibilité</h2>
 <p>
 Ces essais aussi appelés essais manuels
 sont la braie preuve que l'accessibilité fonctionne.
 En effet une analyse statique par logiciel peut
 ne rien trouver comme
 problème d'accessibilité et que cependant
-;a  page soit tatalement innaccessible.
-Ces essais se font en utilsant des technologie d'assistance réelle.
+la  page soit totalement innaccessible.
+Ces essais se font en utilisant des technologie d'assistance réelle.
 Les essais peuvent être fait par une personne
-qui est rééellement hamdoicapée, mais cette
-personne doit maîtrise un vocabulaire 
+qui est rééellement handicapée, mais cette
+personne doit maîtriser un vocabulaire 
 de l'accessibilité permettan de se rattacher aux 
 règles du EAG.
 </p>
 <h3>Navigateur standard avec son fermé</h3>
 <p>
 Pour les essais concernant les limitations
-d'audition, simplement fermez le son de votre ordiateur.
+d'audition, simplement fermez le son de votre ordinateur.
 </p>
 
 <h3>Lecteur d'écran NVDA</h3>
@@ -166,8 +172,8 @@ sur un afficheur braille.
 </p>
 <p>
 NVDA (non visual desktop access)
-et un lecteur d'écran suffisamment performant
-pour être vraiment utilisé apr des personnes handicapées.
+est un lecteur d'écran suffisamment performant
+pour être vraiment utilisé par des personnes handicapées.
 Ce logiciel fonctionne uniquement sur windows et est
 un logiciel libre.
 </p>
@@ -179,7 +185,7 @@ Avantages
 Gratuit.
   </li>
  <li>
-Produit mature et petrformant.
+Produit mature et représentatif des technologies d'assistance.
   </li>
 
   <li>
@@ -194,7 +200,7 @@ NVDA à partir de la clé USB.
   </li>
 
 <p>
-Désvantages
+Désavantages
 <ul>
   <li>
 Il faut parfois chercher un peu dans la con figuration
@@ -206,18 +212,18 @@ comment l'utiliser. De même plusieurs
 personnes doivent écouter la
 boix de synthèse pendant un certain
 temps avant de la comprendre. 
-On parles ici d'une demi journée
-avec un coach de NVDA
-pour commencer à l'utiliser. Pour debvenir productif
-il faut l'utiliser au moins pendant une trentaine d'heure.
-Vous petes productif quand vous pouvez
-utiliser un site accessible en fermant
-l'écran de votre ordinateur.
+
   </li>
 </ul>
 
 </ul>
 
+<p>
+Note : 
+Vous êtes productif avec NVDA quand vous pouvez
+utiliser un site accessible en fermant
+l'écran de votre ordinateur.
+</p>
 <h2>Page de test</h2>
 <p>
 Voici une page avec des erreurs détectables par un
